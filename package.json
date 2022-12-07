@@ -36,5 +36,6 @@
     "eslint-plugin-eslint-plugin": "^2.0.1",
     "eslint-plugin-node": "^11.1.0",
     "mocha": "^5.2.0"
-  }
+  },
+  "private": true
 }
