@@ -18,12 +18,12 @@ npm install eslint-plugin-sort-keys-vue-fix --save-dev
 
 ## Usage
 
-Add `123` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `sort-keys-vue-fix` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "eslint-plugin-sort-keys-vue-fix"
+        "sort-keys-vue-fix"
     ]
 }
 ```
