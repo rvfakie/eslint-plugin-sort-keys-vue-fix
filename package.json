@@ -1,0 +1,40 @@
+{
+  "name": "eslint-plugin-sort-keys-vue-fix",
+  "version": "1.0.0",
+  "description": "Fork of eslint rule that sorts keys in objects (https://eslint.org/docs/rules/sort-keys) with autofix enabled compatible with vue order-in-components",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "vue",
+    "vuejs",
+    "rules"
+  ],
+  "author": "Roman Volchkov",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs/eslint-plugin-vue.git"
+  },
+  "engines": {
+    "node": ">=8.10"
+  },
+  "peerDependencies": {
+    "eslint": "^5.0.0 || ^6.0.0"
+  },
+  "dependencies": {
+    "natural-compare": "^1.4.0",
+    "requireindex": "~1.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.0.0",
+    "eslint-plugin-eslint-plugin": "^2.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "mocha": "^5.2.0"
+  }
+}
