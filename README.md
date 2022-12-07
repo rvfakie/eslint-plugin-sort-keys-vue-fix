@@ -1,6 +1,6 @@
-# eslint-plugin-123
+# eslint-plugin-sort-keys-vue-fix
 
-autofix sort-keys in vue
+Fork of eslint rule that sorts keys in objects (https://eslint.org/docs/rules/sort-keys) with autofix enabled compatible with vue order-in-components
 
 ## Installation
 
@@ -10,10 +10,10 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-123`:
+Next, install `eslint-plugin-sort-keys-vue-fix`:
 
 ```sh
-npm install eslint-plugin-123 --save-dev
+npm install eslint-plugin-sort-keys-vue-fix --save-dev
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ Add `123` to the plugins section of your `.eslintrc` configuration file. You can
 ```json
 {
     "plugins": [
-        "123"
+        "eslint-plugin-sort-keys-vue-fix"
     ]
 }
 ```
@@ -34,7 +34,23 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "123/rule-name": 2
+        "sort-keys-vue-fix/sort-keys-vue-fix": [
+            "warn",
+            "asc",
+            {
+                caseSensitive: true,
+                ignoreChildrenOf: ["model"],
+                ignoreGrandchildrenOf: [
+                "computed",
+                "directives",
+                "inject",
+                "props",
+                "watch",
+                ],
+                minKeys: 2,
+                natural: false,
+            }
+        ]
     }
 }
 ```
