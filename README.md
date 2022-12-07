@@ -38,17 +38,17 @@ Then configure the rules you want to use under the rules section.
             "warn",
             "asc",
             {
-                caseSensitive: true,
-                ignoreChildrenOf: ["model"],
-                ignoreGrandchildrenOf: [
-                "computed",
-                "directives",
-                "inject",
-                "props",
-                "watch",
+                "caseSensitive": true,
+                "ignoreChildrenOf": ["model"],
+                "ignoreGrandchildrenOf": [
+                    "computed",
+                    "directives",
+                    "inject",
+                    "props",
+                    "watch",
                 ],
-                minKeys: 2,
-                natural: false,
+                "minKeys": 2,
+                "natural": false
             }
         ]
     }
