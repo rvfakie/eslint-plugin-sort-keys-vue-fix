@@ -2,7 +2,6 @@
  * @fileoverview Tests for sort-keys-fix rule.
  * @author Toru Nagashima
  */
-
  'use strict'
 
  // ------------------------------------------------------------------------------
@@ -10,7 +9,7 @@
  // ------------------------------------------------------------------------------
  
  const path = require('path')
- const rule = require('../../../lib/rules/vue-sort-keys-fix')
+ const rule = require('../../../lib/rules/sort-keys-vue-fix')
  const RuleTester = require('eslint').RuleTester
  
  // ------------------------------------------------------------------------------
@@ -31,4 +30,4 @@
  
  const ruleTester = new RuleTester()
  
- ruleTester.run('vue-sort-keys-fix', rule, test)
+ ruleTester.run('sort-keys-vue-fix', rule, test)
