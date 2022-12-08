@@ -34,29 +34,11 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "sort-keys-vue-fix/sort-keys-vue-fix": [
-            "warn",
-            "asc",
-            {
-                "caseSensitive": true,
-                "ignoreChildrenOf": ["model"],
-                "ignoreGrandchildrenOf": [
-                    "computed",
-                    "directives",
-                    "inject",
-                    "props",
-                    "watch",
-                ],
-                "minKeys": 2,
-                "natural": false
-            }
-        ]
+        "sort-keys-vue-fix/sort-keys-vue-fix": "warn"
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
-
-
+For available config options, see official [vue/sort-keys](https://eslint.vuejs.org/rules/sort-keys.html) reference.
