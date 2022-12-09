@@ -18,7 +18,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rvfakie/eslint-plugin-sort-keys-vue-fix.git"
+    "url": "https://github.com/rvfakie/eslint-plugin-sort-keys-vue-fix"
   },
   "engines": {
     "node": ">=8.10"
